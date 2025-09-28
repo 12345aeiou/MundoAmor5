@@ -1,0 +1,416 @@
+@keyframes scale-up-vertical-center {
+  0% {
+    transform: scaleY(0.4);
+  }
+
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+body {
+  margin: 0;
+  /* padding-top: 70px; */
+  overflow-x: hidden;
+
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: scroll;
+}
+
+.textojiji p {
+  font-size: 1.5em;
+  font-weight: bold;
+  background: linear-gradient(to right, #ff0000, #007bff);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: rotate(-1deg);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.logo-bienvenida {
+  width: 50px;
+  height: 50px;
+}
+
+
+
+
+
+
+
+#INICIO1,
+#QUIEN1,
+#SERVICIO1,
+#AMBIENTE1,
+#Historias1 {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  /* Aplica el estilo de cursiva */
+  font-weight: 400;
+  /* Define un peso más fino (regular) */
+  text-align: center;
+  font-size: 3em;
+  color: black; /* El texto base sigue siendo negro */
+  text-shadow:
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px #FF6B6B, /* Rojo/Rosa claro para el brillo exterior */
+    0 0 82px #FF6B6B,
+    0 0 92px #FF6B6B,
+    0 0 102px #FF6B6B,
+    0 0 151px #FF6B6B;
+}
+
+.INICIOS {
+
+  margin-top: 100px;
+
+}
+
+.LOGO-GALERIA {
+  width: 100px;
+  height: 100px;
+}
+
+.LOGOTEXTO p {
+
+  font: 2em sans-serif;
+  color: rgb(0, 0, 128);
+  text-align: center;
+}
+
+.LOGOTEXTO2 {
+  text-align: center;
+}
+
+.inicios-contenedor {
+  gap: 90px;
+  /*margin-top: 50px;
+  margin-bottom: 50px;*/
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  /*border: 5px solid #333; /* Agrega grosor (1px) y estilo (solid) */
+
+}
+
+.inicio-item {
+  background-color: white;
+  text-align: center;
+  /*border: 5px solid red;
+  
+  /*padding: 10px;
+  margin: 10px;*/
+}
+
+.imagen-galeria {
+  width: 500px;
+  height: 600px;
+
+
+}
+
+.team-container {
+  /*border: 5px solid #333; /* Agrega grosor (1px) y estilo (solid) */
+  display: grid;
+  gap: 5px;
+  margin-top: 1rem;
+  margin-left: 200px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.team-card1{
+  text-align: justify;
+  background-color:  0 0 42px #FF6B6B;
+  /* ¡Nuevo Azul Opaco! */
+  padding: 1rem;
+  border-radius: 10px;
+
+  /* MODIFICACIÓN AQUÍ para la sombra tipo resplandor con color frambuesa */
+  box-shadow:
+    0 0 10px rgba(216, 77, 129, 0.6),
+    /* Mantenemos el resplandor frambuesa */
+    0 0 20px rgba(216, 77, 129, 0.4),
+    /* El frambuesa resalta sobre el azul oscuro */
+    0 0 30px rgba(216, 77, 129, 0.2);
+
+  transition: transform 0.3s;
+  color: blue;
+  /* Asegura que el texto blanco contraste con el fondo azul */
+  max-width: 300px;
+  margin-left: 440px;
+}
+.team-card {
+  
+  text-align: justify;
+  background-color:   0 0 42px #FF6B6B;
+  /* ¡Nuevo Azul Opaco! */
+  padding: 1rem;
+  border-radius: 10px;
+
+  /* MODIFICACIÓN AQUÍ para la sombra tipo resplandor con color frambuesa */
+  box-shadow:
+    0 0 10px rgba(216, 77, 129, 0.6),
+    /* Mantenemos el resplandor frambuesa */
+    0 0 20px rgba(216, 77, 129, 0.4),
+    /* El frambuesa resalta sobre el azul oscuro */
+    0 0 30px rgba(216, 77, 129, 0.2);
+
+  transition: transform 0.3s;
+  color: blue;
+  /* Asegura que el texto blanco contraste con el fondo azul */
+  max-width: 300px;
+}
+
+.team-card:hover {
+  transform: translateY(-20px)scale(1.05);
+  ;
+}
+.team-card1:hover {
+  transform: translateY(-20px)scale(1.05);
+  ;
+}
+
+
+.verProducto {
+  text-align: center;
+}
+
+.verProducto a {
+
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: white;
+  color: black;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.verProducto a:hover {
+  background-color: wheat;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+/* Contenedor principal del carrusel */
+.carrusel {
+  text-align: center;
+  display: block;
+  width: 100%;
+  height: 300px;
+  /* Ajusta la altura de las imágenes */
+  overflow-x: scroll;
+  /* Permite el desplazamiento horizontal */
+  overflow-y: hidden;
+  white-space: nowrap;
+  /* Mantiene las imágenes en una sola línea */
+  scroll-snap-type: x mandatory;
+  /* Fuerza el "ajuste" al desplazarse */
+  -webkit-overflow-scrolling: touch;
+  /* Mejora el desplazamiento en iOS */
+}
+
+/* Contenedor interno */
+.carrusel-inner {
+  height: 100%;
+}
+
+/* Contenedor individual de cada imagen */
+.carrusel-item {
+  display: inline-block;
+  height: 100%;
+  width: 400px;
+  /* Ajusta el ancho de cada imagen */
+  margin-right: 0px;
+  scroll-snap-align: center;
+  /* Cada ítem se ajusta al centro del carrusel */
+  transition: transform 0.4s ease;
+  /* Suaviza el efecto de zoom */
+}
+
+/* Estilo de la imagen */
+.carrusel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* Asegura que la imagen no se distorsione */
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* El efecto de zoom al pasar el mouse */
+.carrusel-item:hover {
+  transform: scale(1.1);
+  /* Agranda la imagen un 10% */
+}
+
+.Historias-videos{
+  
+  display: grid;
+  gap: 5px;
+  margin-top: 1rem;
+  margin-left: 120px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.videos{
+  text-align: justify;
+  background-color:   0 0 42px #FF6B6B;
+  /* ¡Nuevo Azul Opaco! */
+  padding: 1rem;
+  border-radius: 10px;
+
+  /* MODIFICACIÓN AQUÍ para la sombra tipo resplandor con color frambuesa */
+  box-shadow:
+    0 0 10px rgba(216, 77, 129, 0.6),
+    /* Mantenemos el resplandor frambuesa */
+    0 0 20px rgba(216, 77, 129, 0.4),
+    /* El frambuesa resalta sobre el azul oscuro */
+    0 0 30px rgba(216, 77, 129, 0.2);
+
+  transition: transform 0.3s;
+  color: blue;
+  /* Asegura que el texto blanco contraste con el fondo azul */
+  max-width: 380px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.logos-contenedor {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.logo-buttom {
+  margin: 5px 0;
+}
+
+.logos-contenedor img {
+  width: 45px;
+  height: auto;
+}
+
+.main-header {
+  border-bottom: 5px solid red;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  display: block;
+  margin-right: 35px;
+}
+
+.side-menu {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.side-menu.open {
+  width: 250px;
+}
+
+.main-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.nav-item {
+  padding: 8px 0;
+  font-size: 1.5em;
+  color: #333;
+  text-decoration: none;
+  display: block;
+  transition: 0.3s;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 25px;
+  font-size: 36px;
+  color: #333;
+  text-decoration: none;
+}
+
+
+
+@media (max-width: 808px) {
+  .vestido-item {
+    width: 90%;
+    margin: 10px 0;
+  }
+
+  .imagen-galeria {
+    width: 100%;
+    height: auto;
+  }
+
+  .team-card1{
+    margin: 2px;
+  }
+  .team-container {
+    display: grid;
+    gap: 5px;
+    margin-top: 1rem;
+    margin-left: 0px;
+    margin-left: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+  .Historias-videos{
+    display: grid;
+    gap: 5px;
+    margin-top: 1rem;
+    margin-left: 0px;
+    margin-left: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+.nav-item:hover {
+  background: #f6f8fa;
+  display: grid;
+}
